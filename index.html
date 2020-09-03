@@ -9,10 +9,9 @@
 <style>
     body {
         background-color: white;
-        margin-left: 130px;
-        margin-right: 130px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
-
     h3,
     h2,
     p {
@@ -24,58 +23,83 @@
         list-style: none;
         text-decoration: none;
         padding-left: 10px;
-        padding-right: 15px;
-        float: right;
+        padding-right: 10px;
+        font-size: 14px;
     }
-
+    header{
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    background: white;
+    width: 100%;
+    padding: 15px 60px;
+    }
     .btn_std {
         margin-top: 80px;
         margin-bottom: 30px;
     }
-
     .min_left {
         position: fixed;
         right: 130px;
     }
-
     .rattings {
         border: 1px solid black;
         width: 18%;
         height: 100px;
         border-radius: 64%;
     }
-
     .rcorners1 {
-        border-radius: 500px;
-        background: #73AD21;
-        width: 134px;
-        margin-top: 30px;
-        height: 134px;
+    border-radius: 500px;
+    background: #73AD21;
+    width: 134px;
+    height: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     }
 </style>
 
 <body>
-    <div class="mein_boed" style="display:flex">
-        <div class="main_hed" style="width: 65%;">
-            <div style="display: flex;">
+
+    <header style="display: flex;position: fixed; background:white; width: 100%;">
+        <div style="width: 65%;">
+            <div style="display: flex; ">
                 <h3 style="margin-right: 100px;">logo</h3>
                 <form action="/action_page.php">
                     <input type="search" id="gsearch" name="gsearch" placeholder="search"
                         style="width: 400px; height: 30px;">
                 </form>
             </div>
+        </div>
+        <div style="width: 30%;">
+            <ul style="display: flex; list-style: none; padding: 0px; margin: 0px;">
+                <li><a href="#">lern</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Carrears</a></li>
+                <li> <a href="#">Help</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sing up</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <div class="mein_boed" style="display:flex">
+        <div class="main_hed" style="width: 65%;">
+           
             <div class="btn_std">
-                <button type="button" style="font-size: 13px;" onclick="alert('Hello world!')">Social media</button>
-                <button type="button" style="font-size: 13px;" onclick="alert('Hello world!')">100 most popular</button>
-                <button type="button" style="font-size: 13px;" onclick="alert('Hello world!')">most popular under
+                <button type="button" style="font-size: 13px;">Social media</button>
+                <button type="button" style="font-size: 13px;">100 most popular</button>
+                <button type="button" style="font-size: 13px;">most popular under
                     $25</button>
-                <h2 style="margin-top: 30px; font-size: 32px;">Snap</h2><br>
-                <h2 style="font-size: 32px;">US$23.65</h2><br>
+                <h2 style="margin-top: 30px; font-size: 32px;">Snap</h2>
+                <h2 style="font-size: 32px;">US$23.65</h2>
                 <p style="font-size: 13px;">+US$1.12 (+5.00%) To (+5.00%)</p>
             </div>
             <div class="1d" style="margin-top: 280px;">
                 <hr>
-                <ul style="list-style: none; display: flex; ">
+                <ul style="list-style: none; display: flex;margin: 0;padding: 0;">
                     <li>1d</li>
                     <li style="padding-left: 30px; font-size: 13px;">1w</li>
                     <li style="padding-left: 30px; font-size: 13px;">1m</li>
@@ -88,14 +112,13 @@
             <div class="box-photo"
                 style="width:80%; display: flex; border: 1px solid black; padding: 30px; margin-top: 30px; border-radius: 5px;">
                 <h3 style="margin: 30px;">photo</h3>
-                <p style="font-size: 13px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Autem nostrum
-                    iste neque. Quaerat,
-                    repellendus
-                    magnam! Natus atque repellat vero asperiores perferendis vel voluptates iste incidunt, quos ad
-                    inventore
-                    ducimus hic id. Cupiditate nostrum nam magni fugiat quos, officia nesciunt sint perferendis quae
-                    assumenda
-                    eos iusto sapiente reiciendis laborum inventore dolorum.</p>
+                <div>
+                    <span style="font-size: 13px;">Why Robinhood?</span>
+                    <p style="margin-top: 10px; margin-bottom: 25px; font-size: 16px;">
+                        You can buy or sell Snap and other stocks, options, ETFs, and crypto commission-free!
+                    </p>
+                    <a href="#" style="font-size: 15px; color: #73AD21; padding: 0px;">Sign up for free</a>
+                </div>
             </div>
             <div class="about-span" style="margin-top: 50px;">
                 <h2>About SNAP</h2>
@@ -181,23 +204,15 @@
                 <h2>Collections</h2>
                 <hr>
                 <div style="margin-top: 30px;">
-                    <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
-                        onclick="alert('Hello world!')">Social
-                        Media</butto>
-                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
-                            onclick="alert('Hello world!')">Watch100 Most
+                    <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;">Social Media</butto>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;">Watch100 Most
                             Popular</button>
-                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
-                            onclick="alert('Hello world!')">Most Popular Under
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;">Most Popular Under
                             $25</button>
-                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
-                            onclick="alert('Hello world!')">Technology</button>
-                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
-                            onclick="alert('Hello world!')">Media</button>
-                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
-                            onclick="alert('Hello world!')">Internet</button>
-                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
-                            onclick="alert('Hello world!')">2017 IPO</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;">Technology</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;">Media</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;">Internet</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;">2017 IPO</button>
                 </div>
             </div>
             <div class="Digestible Financial News" style="margin-top: 70px;">
@@ -205,9 +220,9 @@
                 <hr>
                 <div style="display: flex; margin-top: 30px;">
                     <div>
-                        <img src="img/a9ae5109b67a3f8e083a06d3d9e0b724.jpg" alt=""
+                        <img src="img/man1.jpg" alt=""
                             style="height: 60px;width: 60px; border-radius: 50px;">
-                        <img src="img/c968382fb134cac25832212df99ac275.jpg" alt=""
+                        <img src="img/man2.jpg" alt=""
                             style="height: 60px;width: 60px; border-radius: 50px;">
                     </div>
                     <div style="margin-left: 20px;">
@@ -243,11 +258,38 @@
                     <span style="color:rgb(0, 200, 5);  font-size: 13px;">Read More</span>
                 </div>
             </div>
+            <div class="snap news"style="margin-top: 70px;">
+                <h2>SNAP NEWS</h2>
+                <hr>
+                <div style="border: 1px solid black; padding: 20px; display: flex; margin-top: 30px;">
+                <div style="width: 70%; margin-top: 23px;">
+                    <span style="font-size: 13px; ">Fortune 2sep</span>
+                <br>
+                <h3 style=" margin-top: 10px; margin-bottom: 10px;">Vanessa Guthrie | 2020 40 under 40 in Tech</h3>
+                <p style="font-size: 13px;">Vanessa Guthrie is at the forefront of Snap Inc.’s efforts to develop </p>
+                </div>
+                <div style="width: 30%;">
+                    <img src="img/woman.webp" style="height: 130px; width: 100%;" alt="">
+                </div>
+                </div>
+                <div style="border: 1px solid black; padding: 20px; display: flex; margin-top: 30px;">
+                    <div style="width: 70%; margin-top: 23px;">
+                        <span style="font-size: 13px; ">Fortune 2sep</span>
+                    <br>
+                    <h3 style=" margin-top: 10px; margin-bottom: 10px;">Vanessa Guthrie | 2020 40 under 40 in Tech</h3>
+                    <p style="font-size: 13px;">Vanessa Guthrie is at the forefront of Snap Inc.’s efforts to develop </p>
+                    </div>
+                    <div style="width: 30%;">
+                        <img src="img/snap.jpg" style="width: 100%; height: 130px;" alt="">
+                    </div>
+                    </div>
+            </div>
+
             <div style="margin-top: 70px;">
                 <h2>Analyst Ratings</h2>
                 <hr>
             </div>
-            <div style="display: flex;">
+            <div style="display: flex; align-items: center; margin-top: 30px;">
                 <div style="width: 30%;">
                     <div class="rcorners1">
                         <p style="text-align: center; padding: 32px;">
@@ -257,9 +299,20 @@
                     </div>
                 </div>
                 <div style="width: 50%;">
-                    <div style="border: 2px solid black; margin-top: 45px;"></div>
-                    <div style="border: 2px solid black; margin-top: 45px;"></div>
-                    <div style="border: 2px solid black; margin-top: 45px;"></div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <span>Buy</span>
+                        <div style="background: #000;border-radius: 5px; margin-left: 10px;   width: 100%; height: 6px;"></div>  
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <span>Hold</span>
+                        <div style="background: #000;border-radius: 5px; margin-left: 10px;   width: 100%; height: 6px;"></div>  
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <span>Sell</span>
+                        <div style="background: #000;border-radius: 5px; margin-left: 10px;   width: 100%; height: 6px;"></div>  
+                    </div>
+                    
+                    
                 </div>
             </div>
             <div style="margin-top: 70px; margin-bottom: 200px;">
@@ -271,30 +324,20 @@
                 <hr>
             </div>
             <div style="margin-top: 30px;">
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">ESGRO</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">NTCO</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">FSV</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">QIWI</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">CLB</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">MQT</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">ABUS</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">HPR</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">ESGRO</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">NTCO</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">FSV</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">QIWI</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">CLB</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">MQT</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">ABUS</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">HPR</button>
                 <br>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">SBT</button>
-                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
-                    onclick="alert('Hello world!')">VISL</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">SBT</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;">VISL</button>
             </div>
             <div style="margin-top: 60px; font-size: 13px;">
-                <p>Robinhood Snacks newsletters and podcasts reflect the opinions of only the authors who are associated
+                <p style="font-size: 16px;">Robinhood Snacks newsletters and podcasts reflect the opinions of only the authors who are associated
                     persons of
                     Robinhood Financial LLC and do not reflect the views of Robinhood Markets, Inc. or any of its
                     subsidiaries or
@@ -318,25 +361,16 @@
                     customers may lose
                     money, including their original investment. Robinhood Financial LLC, member FINRA/SIPC.</p>
                 <br>
-                <br>
-                <br>
 
-                <p>All investments involve risk and the past performance of a security, or financial product does not
+                <p style="font-size: 16px; margin-bottom: 30px;">All investments involve risk and the past performance of a security, or financial product does not
                     guarantee future
                     results or returns. Securities offered through Robinhood Financial LLC, member FINRA/SIPC. To learn
                     more about the
-                    information provided on this page, please see our Web Disclosures.</p>
+                    information provided on this page, please see our <b>Web Disclosures</b>.</p>
             </div>
         </div>
 
         <div class="min_left" style="width:25%">
-            <ul style="display: flex; list-style: none; padding: 0px;">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Carrears</a></li>
-                <li> <a href="#">Help</a></li>
-                <li><a href="#">Log in</a></li>
-                <li><a href="#">Sing up</a></li>
-            </ul>
             <div class="bos_sed" style="margin-top: 80px; border: 1px solid black; border-radius: 10px; padding: 30px;">
                 <h3 style="margin: 15px; font-size: 15px;">Buy SNAP</h3>
                 <hr>
@@ -347,8 +381,7 @@
                         <li style="margin-bottom: 14px;">Commissions</li>
                     </ul>
                     <ul style="list-style: none; margin-bottom: 0px;">
-                        <li style="margin-bottom: 14px;"><button type="button"
-                                onclick="alert('Hello world!')">0</button></li>
+                        <li style="margin-bottom: 14px;"><button type="button">0</button></li>
                         <li style="margin-bottom: 14px;"> US$23.65</li>
                         <li style="margin-bottom: 14px;">US$0.00</li>
                     </ul>
@@ -366,16 +399,14 @@
                     Sign up for a Robinhood Account to buy or sell Snap stock and options commission-free.
                 </p>
                 <div style="text-align: center; margin-top: 30px; font-size: 13px;">
-                    <button type="button" onclick="alert('Hello world!')">Sign Up to Buy</button>
+                    <button type="button">Sign Up to Buy</button>
                 </div>
             </div>
             <div style="text-align: center;">
-                <button type="button" style="font-size: 13px; margin-top: 30px; width: 50%;"
-                    onclick="alert('Hello world!')">Trade SNAP Options</button>
+                <button type="button" style="font-size: 13px; margin-top: 30px; width: 50%;">Trade SNAP Options</button>
             </div>
             <div style="text-align: center;">
-                <button type="button" style="font-size: 13px; margin-top: 30px; width: 50%;"
-                    onclick="alert('Hello world!')">Watch SNAP</button>
+                <button type="button" style="font-size: 13px; margin-top: 30px; width: 50%;">Watch SNAP</button>
             </div>
         </div>
     </div>
