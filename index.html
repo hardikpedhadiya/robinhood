@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: white;
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+
+    h3,
+    h2,
+    p {
+        margin: 0px;
+    }
+
+    a {
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 15px;
+        float: right;
+    }
+
+    .btn_std {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .min_left {
+        position: fixed;
+        right: 130px;
+    }
+
+    .rattings {
+        border: 1px solid black;
+        width: 18%;
+        height: 100px;
+        border-radius: 64%;
+    }
+
+    .rcorners1 {
+        border-radius: 500px;
+        background: #73AD21;
+        width: 134px;
+        margin-top: 30px;
+        height: 134px;
+    }
+</style>
+
+<body>
+    <div class="mein_boed" style="display:flex">
+        <div class="main_hed" style="width: 65%;">
+            <div style="display: flex;">
+                <h3 style="margin-right: 100px;">logo</h3>
+                <form action="/action_page.php">
+                    <input type="search" id="gsearch" name="gsearch" placeholder="search"
+                        style="width: 400px; height: 30px;">
+                </form>
+            </div>
+            <div class="btn_std">
+                <button type="button" style="font-size: 13px;" onclick="alert('Hello world!')">Social media</button>
+                <button type="button" style="font-size: 13px;" onclick="alert('Hello world!')">100 most popular</button>
+                <button type="button" style="font-size: 13px;" onclick="alert('Hello world!')">most popular under
+                    $25</button>
+                <h2 style="margin-top: 30px; font-size: 32px;">Snap</h2><br>
+                <h2 style="font-size: 32px;">US$23.65</h2><br>
+                <p style="font-size: 13px;">+US$1.12 (+5.00%) To (+5.00%)</p>
+            </div>
+            <div class="1d" style="margin-top: 280px;">
+                <hr>
+                <ul style="list-style: none; display: flex; ">
+                    <li>1d</li>
+                    <li style="padding-left: 30px; font-size: 13px;">1w</li>
+                    <li style="padding-left: 30px; font-size: 13px;">1m</li>
+                    <li style="padding-left: 30px; font-size: 13px;">3m</li>
+                    <li style="padding-left: 30px; font-size: 13px;">1y</li>
+                    <li style="padding-left: 30px; font-size: 13px;">5y</li>
+                </ul>
+                <hr>
+            </div>
+            <div class="box-photo"
+                style="width:80%; display: flex; border: 1px solid black; padding: 30px; margin-top: 30px; border-radius: 5px;">
+                <h3 style="margin: 30px;">photo</h3>
+                <p style="font-size: 13px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Autem nostrum
+                    iste neque. Quaerat,
+                    repellendus
+                    magnam! Natus atque repellat vero asperiores perferendis vel voluptates iste incidunt, quos ad
+                    inventore
+                    ducimus hic id. Cupiditate nostrum nam magni fugiat quos, officia nesciunt sint perferendis quae
+                    assumenda
+                    eos iusto sapiente reiciendis laborum inventore dolorum.</p>
+            </div>
+            <div class="about-span" style="margin-top: 50px;">
+                <h2>About SNAP</h2>
+                <hr>
+                <p style="width: 600px; margin-top: 30px; font-size: 15px;">Snap, Inc. engages in the operation of its
+                    camera platform.
+                    Its
+                    products include
+                    Snapchat, using the camera
+                    and editing
+                    tools to take and share Snaps, Friends Page, which lets users create and use Stories, Groups, Video
+                    and
+                    Chat, Discover
+                    for searching and surfacing relevant Stories, Snap Map, which shows friends, Stories and Snaps near
+                    the
+                    user, Memories,
+                    for saving personal collections, and Spectacles, wearable sunglasses capable of taking Snaps and
+                    interacting
+                    directly
+                    with the Snapchat application. Read More</p>
+            </div>
+            <div style="display: flex;">
+                <div style="font-size: 13px; font-weight: 700;">
+                    <ul style="list-style: none; margin-top: 50px; padding: 0px;">
+                        <li style="margin-bottom: 15px;">CEO
+                            <p style="font-weight: 500; margin-top: 5px;">Evan Thomas Spiegel</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">Market Cap
+                            <p style="font-weight: 500; margin-top: 5px;">34.57B</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">High Today
+                            <p style="font-weight: 500; margin-top: 5px;">US$23.56</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">52 Week High
+                            <p style="font-weight: 500; margin-top: 5px;">US$26.76</p>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-size: 13px; font-weight: 700;">
+                    <ul style="list-style: none; margin-top: 50px;">
+                        <li style="margin-bottom: 15px;">Employees
+                            <p style="font-weight: 500; margin-top: 5px;">3,195</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">Price-Earnings Ratio
+                            <p style="font-weight: 500; margin-top: 5px;">--</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">Low Today
+                            <p style="font-weight: 500; margin-top: 5px;">US$22.39</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">52 Week Low
+                            <p style="font-weight: 500; margin-top: 5px;">US$7.89</p>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-size: 13px; font-weight: 700;">
+                    <ul style="list-style: none; margin-top: 50px; ">
+                        <li style="margin-bottom: 15px;">Headquarters
+                            <p style="font-weight: 500; margin-top: 5px;">Santa Monica, California</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">High Today
+                            <p style="font-weight: 500; margin-top: 5px;">--</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">Open Price
+                            <p style="font-weight: 500; margin-top: 5px;">US$22.55</p>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-size: 13px; font-weight: 700;">
+                    <ul style="list-style: none; margin-top: 50px;">
+                        <li style="margin-bottom: 15px;">Founded
+                            <p style="font-weight: 500; margin-top: 5px;">2010</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">Average Volume
+                            <p style="font-weight: 500; margin-top: 5px;">18.72M</p>
+                        </li>
+                        <li style="margin-bottom: 15px;">Volume
+                            <p style="font-weight: 500; margin-top: 5px;">40.14M</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Collections" style="margin-top: 50px;">
+                <h2>Collections</h2>
+                <hr>
+                <div style="margin-top: 30px;">
+                    <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
+                        onclick="alert('Hello world!')">Social
+                        Media</butto>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
+                            onclick="alert('Hello world!')">Watch100 Most
+                            Popular</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
+                            onclick="alert('Hello world!')">Most Popular Under
+                            $25</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
+                            onclick="alert('Hello world!')">Technology</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
+                            onclick="alert('Hello world!')">Media</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
+                            onclick="alert('Hello world!')">Internet</button>
+                        <button type="button" style="margin-left: 20px; margin-top:10px; font-size: 13px;"
+                            onclick="alert('Hello world!')">2017 IPO</button>
+                </div>
+            </div>
+            <div class="Digestible Financial News" style="margin-top: 70px;">
+                <h2>Digestible Financial News</h2>
+                <hr>
+                <div style="display: flex; margin-top: 30px;">
+                    <div>
+                        <img src="img/a9ae5109b67a3f8e083a06d3d9e0b724.jpg" alt=""
+                            style="height: 60px;width: 60px; border-radius: 50px;">
+                        <img src="img/c968382fb134cac25832212df99ac275.jpg" alt=""
+                            style="height: 60px;width: 60px; border-radius: 50px;">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <h3 style="margin-top: 10px; margin-bottom: 5px; font-size: 15px;">Jack Kramer & Nick Martell
+                        </h3>
+                        <p style="font-size: 13px;">Managing Editors of News & Snacks at Robinhood Financial LLC</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="border: 1px solid black; border-radius: 5px; width: 30%; padding: 15px; margin-right: 15px; margin-top: 30px;">
+                    <span style="color: rgb(121,133,139); font-size: 13px;">29 Jul 2020</span>
+                    <p style="font-size: 15px; margin-top: 10px; margin-bottom: 10px;">
+                        Facebook will pay TikTok stars to post on Instagram Reels (its new TikTok knock-off)
+                    </p>
+                    <span style="color:rgb(0, 200, 5); font-size: 13px;">Read More</span>
+                </div>
+                <div
+                    style="border: 1px solid black; border-radius: 5px; width: 30%; padding: 15px; margin-right: 15px; margin-top: 30px;">
+                    <span style="color: rgb(121,133,139); font-size: 13px;">29 Jul 2020</span>
+                    <p style="font-size: 15px; margin-top: 10px; margin-bottom: 10px;">
+                        Facebook will pay TikTok stars to post on Instagram Reels (its new TikTok knock-off)
+                    </p>
+                    <span style="color:rgb(0, 200, 5); font-size: 13px;">Read More</span>
+                </div>
+                <div
+                    style="border: 1px solid black; border-radius: 5px; width: 30%; padding: 15px; margin-right: 15px; margin-top: 30px;">
+                    <span style="color: rgb(121,133,139); font-size: 13px;">29 Jul 2020</span>
+                    <p style="font-size: 15px; margin-top: 10px; margin-bottom: 10px;">
+                        Facebook will pay TikTok stars to post on Instagram Reels (its new TikTok knock-off)
+                    </p>
+                    <span style="color:rgb(0, 200, 5);  font-size: 13px;">Read More</span>
+                </div>
+            </div>
+            <div style="margin-top: 70px;">
+                <h2>Analyst Ratings</h2>
+                <hr>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 30%;">
+                    <div class="rcorners1">
+                        <p style="text-align: center; padding: 32px;">
+                            61% <br>
+                            of 38 ratings
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 50%;">
+                    <div style="border: 2px solid black; margin-top: 45px;"></div>
+                    <div style="border: 2px solid black; margin-top: 45px;"></div>
+                    <div style="border: 2px solid black; margin-top: 45px;"></div>
+                </div>
+            </div>
+            <div style="margin-top: 70px; margin-bottom: 200px;">
+                <h2>SNAP Earnings</h2>
+                <hr>
+            </div>
+            <div style="margin-top: 70px;">
+                <h2>You May Also Like</h2>
+                <hr>
+            </div>
+            <div style="margin-top: 30px;">
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">ESGRO</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">NTCO</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">FSV</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">QIWI</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">CLB</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">MQT</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">ABUS</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">HPR</button>
+                <br>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">SBT</button>
+                <button type="button" style="margin-right:20px; font-size: 13px; margin-top:20px;"
+                    onclick="alert('Hello world!')">VISL</button>
+            </div>
+            <div style="margin-top: 60px; font-size: 13px;">
+                <p>Robinhood Snacks newsletters and podcasts reflect the opinions of only the authors who are associated
+                    persons of
+                    Robinhood Financial LLC and do not reflect the views of Robinhood Markets, Inc. or any of its
+                    subsidiaries or
+                    affiliates. They are meant for informational purposes only, are not intended to serve as a
+                    recommendation to buy or sell
+                    any security in a self-directed Robinhood account or any other account, and are not an offer or sale
+                    of a security. They
+                    are also not research reports and are not intended to serve as the basis for any investment
+                    decision. Any third-party
+                    information provided therein does not reflect the views of Robinhood Markets, Inc., Robinhood
+                    Financial LLC, or any of
+                    their subsidiaries or affiliates. All investments involve risk and the past performance of a
+                    security or financial
+                    product does not guarantee future results or returns. Keep in mind that while diversification may
+                    help spread risk, it
+                    does not assure a profit or protect against loss. There is always the potential of losing money when
+                    you invest in
+                    securities or other financial products. Investors should consider their investment objectives and
+                    risks carefully before
+                    investing. The price of a given security may increase or decrease based on market conditions and
+                    customers may lose
+                    money, including their original investment. Robinhood Financial LLC, member FINRA/SIPC.</p>
+                <br>
+                <br>
+                <br>
+
+                <p>All investments involve risk and the past performance of a security, or financial product does not
+                    guarantee future
+                    results or returns. Securities offered through Robinhood Financial LLC, member FINRA/SIPC. To learn
+                    more about the
+                    information provided on this page, please see our Web Disclosures.</p>
+            </div>
+        </div>
+
+        <div class="min_left" style="width:25%">
+            <ul style="display: flex; list-style: none; padding: 0px;">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Carrears</a></li>
+                <li> <a href="#">Help</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sing up</a></li>
+            </ul>
+            <div class="bos_sed" style="margin-top: 80px; border: 1px solid black; border-radius: 10px; padding: 30px;">
+                <h3 style="margin: 15px; font-size: 15px;">Buy SNAP</h3>
+                <hr>
+                <div style="display: flex; font-size: 13px;">
+                    <ul style="list-style: none; margin-bottom: 0px;">
+                        <li style="margin-bottom: 14px;">Shares</li>
+                        <li style="margin-bottom: 14px;">Market Price</li>
+                        <li style="margin-bottom: 14px;">Commissions</li>
+                    </ul>
+                    <ul style="list-style: none; margin-bottom: 0px;">
+                        <li style="margin-bottom: 14px;"><button type="button"
+                                onclick="alert('Hello world!')">0</button></li>
+                        <li style="margin-bottom: 14px;"> US$23.65</li>
+                        <li style="margin-bottom: 14px;">US$0.00</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="display: flex; font-size: 13px;">
+                    <ul style="list-style: none; margin-bottom: 0px;">
+                        <li style="margin-bottom: 14px;">Estimated Cost</li>
+                    </ul>
+                    <ul style="list-style: none; margin-bottom: 0px;">
+                        <li style="margin-bottom: 14px;">US$0.00</li>
+                    </ul>
+                </div>
+                <p style=" text-align: center; font-size: 13px;">
+                    Sign up for a Robinhood Account to buy or sell Snap stock and options commission-free.
+                </p>
+                <div style="text-align: center; margin-top: 30px; font-size: 13px;">
+                    <button type="button" onclick="alert('Hello world!')">Sign Up to Buy</button>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button type="button" style="font-size: 13px; margin-top: 30px; width: 50%;"
+                    onclick="alert('Hello world!')">Trade SNAP Options</button>
+            </div>
+            <div style="text-align: center;">
+                <button type="button" style="font-size: 13px; margin-top: 30px; width: 50%;"
+                    onclick="alert('Hello world!')">Watch SNAP</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
